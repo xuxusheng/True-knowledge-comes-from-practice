@@ -1,0 +1,178 @@
+/*主要知识点：*/
+/*1.transform*/
+/*2.transition*/
+/*3.box-sizing*/
+/*4.border-radius*/
+
+/*定义和用法：
+    transform属性向元素应用2D或3D转换，该属性允许我们对元素进行旋转、缩放、移动或倾斜
+    rotate(angle)定义2D旋转，在参数中规定角度
+    rotateX(angle)定义沿着X轴的3D旋转
+    rotateY(angle)定义沿着Y轴的3D旋转
+    rotateZ(angle)定义沿着Z轴的3D旋转
+    scale(x,y)定义2D缩放转换
+    scale3d(x,y,z)定义3D缩放转换
+    scaleX(x)通过设置X轴的值来定义缩放转换
+    scaleY(y)通过设置Y轴的值来定义缩放转换
+    scaleZ(z)通过设置Z轴的值来定义3D缩放转换
+
+    浏览器支持：
+    Internet Explorer10、FireFox、Opera支持transform属性
+    Internet Explorer9支持替代的-ms-transform属性（仅适用于2D转换）。
+    Safari和Chrome支持替代的-webkit-transform属性（3D和2D转换）
+    Opera只支持2D转换。
+*/
+
+*{
+    margin:0;
+    padding:0;
+}
+/*.box,.box .link,.button,.icon{*/
+    /*border:solid red 1px;*/
+/*}*/
+body{
+    background:url("images/background2.jpg") no-repeat;
+    background-size: 100% 200%;
+}
+.box{
+    width:1000px;
+    height:280px;
+    margin:50px auto;
+    position:relative;
+}
+.box .link{
+    width:205px;
+    height:280px;
+    margin:0 20px;
+    float:left;
+    /*border:solid 1px red;*/
+
+}
+.link .icon{
+    display: inline-block;
+    width:100%;
+    height:190px;
+    /*border:solid 1px yellow;*/
+    transition:all 1s ease-in-out;
+}
+.link-mission .icon{
+    background: url("images/mission.png") no-repeat center center;
+}
+.link-play .icon{
+    background: url("images/play.png") no-repeat center center;
+}
+.link-touch .icon{
+    background: url("images/touch.png" ) no-repeat center center;
+}
+
+/*.link:hover .icon*/
+.link .icon:hover{
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+}
+.button{
+    display:block;
+    width:180px;
+    height:50px;
+    text-decoration: none;
+    line-height: 50px;
+    color:#2dcb70;
+    font-family: "microsoft yahei",Arial;
+    font-weight: bolder;
+    border:2px solid rgba(255,255,255,0.8);
+    padding-left: 20px;
+    margin:0 auto;
+    box-sizing: border-box;
+    background: url("images/allow.png") no-repeat 120px center;
+    transition:background 0.3s ease-in-out;
+    position:relative;
+    border-radius:6px;
+}
+.button:hover{
+    border:2px solid rgba(255,255,255,1);
+    background-position: 135px center;
+}
+/*tips:线条高度不变，宽度变，位置变*/
+.line-left,.line-right{
+    height:2px;
+    width:0;
+    position:absolute;
+    transition:all 0.2s linear 0.2s;
+    background: #fff;
+}
+.line-top,.line-bottom{
+    height:0;
+    width:2px;
+    position:absolute;
+    transition:all 0.2s linear 0.2s;
+    background: #fff;
+}
+.line-left{
+    left:-60px;
+    top:-2px;
+}
+.line-right{
+    right:-60px;
+    bottom:-2px;
+}
+.line-top{
+    right:-2px;
+    top:-60px;
+}
+.line-bottom{
+    left:-2px;
+    bottom:-60px;
+}
+.button:hover .line-left{
+    width:60px;
+    left:0;
+}
+.button:hover .line-right{
+    width:60px;
+    right:0;
+}
+.button:hover .line-top{
+    height:30px;
+    top:0;
+}
+.button:hover .line-bottom{
+    height:30px;
+    bottom:0;
+}
+.box .tip{
+    position:absolute;
+    padding:0 14px;
+    height:35px;
+    line-height: 35px;
+    background-color: #2dcb70;
+    color:#fff;
+    top:150px;
+    font-weight: normal;
+    text-transform: none;
+    margin:0 auto;
+    border-radius:3px;
+    opacity:0;
+    transition:left 0.3s ease-out,top 0.3s ease-out,opacity 0.3s ease-out;
+}
+.tip em{
+    font-style:normal;
+}
+.tip span{
+    position:absolute;
+    width:0;height:0;
+    overflow: hidden;
+    border:7px solid transparent;
+    border-top-color:#2dcb70;
+    left:50%;
+    margin-left:-7px;
+    bottom:-14px;
+}
+
+
+
+
+
+

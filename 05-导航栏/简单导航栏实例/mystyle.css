@@ -1,0 +1,25 @@
+body,ul,li,a{margin:0px;padding:0px;}
+ul{
+    background-color: cadetblue;
+    list-style-type: none;
+    width:400px;
+    text-align:center;
+    height:30px;
+}
+li{
+    /*display:inline;*/
+    float:left;
+}
+a:link,a:visited{
+    display: block;
+    line-height: 30px;
+    padding:3px 5px;
+    text-decoration: none;
+    background-color: cadetblue;
+    color:azure;
+    width:70px;
+    text-align:center;
+}
+a:hover,a:active{
+    color:red;background-color: black;
+}

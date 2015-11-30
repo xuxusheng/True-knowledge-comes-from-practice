@@ -1,0 +1,60 @@
+body{
+    background-color: #eee;
+}
+body .panel-footer a+a{
+    border-left: solid 1px #aaa;
+    padding-left:5px;
+}
+a{
+     text-decoration: none;
+ }
+.navbar{
+    height:100px;
+    margin-bottom: 0;
+}
+.navbar-brand{
+    font-size: 50px;
+    padding-top:40px;
+}
+.collapse{
+    padding-top:40px;
+}
+
+.panel-heading{
+    height:30px;
+    font-size:15px;
+    text-align:center;
+    padding:4px;
+}
+
+.panel-title{
+    margin:7px 0;
+    color:#777;
+    font-size:14px;
+    font-weight: 600;
+}
+.panel-body a{
+    color:#777;
+    font-size:12px;
+    padding:2px 4px;
+}
+.panel{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+body .panel-footer{
+    height:50px;
+    text-align:center;
+    font-size:10px;
+}
+
+body .panel-footer p{
+    margin-bottom: 3px;
+    margin-top:3px;
+}
+.jumbotron{
+    border:solid 4px white;
+    border-radius: 3px;
+    margin-top:10px;
+    margin-bottom:10px;
+}

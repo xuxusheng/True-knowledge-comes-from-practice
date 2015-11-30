@@ -1,0 +1,45 @@
+*{
+    /*border:solid 1px red;*/
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #fdfdf6;
+}
+#header{
+    height:80px;
+    /*width:80%;*/
+    background-color: cornflowerblue;
+    margin-bottom:20px;
+}
+#content{
+    width:80%;
+    margin:0 auto;
+    border:solid 1px red;
+}
+h1{
+    font-family: "幼圆";
+    font-weight: 100;
+    font-size:3em;
+    color:#ffffff;
+    text-align:center;
+    line-height:80px;
+}
+ul{
+    display:block;
+}
+ul li{
+    float:left;
+    list-style:none;
+    padding-right:40px;
+    display:block;
+}
+a{
+    text-decoration:none;
+    font-family: "microsoft yahei";
+    font-size: 18px;
+}
+#placeholder{
+    width:40%;
+    display: block;
+}

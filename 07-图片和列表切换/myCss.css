@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+}
+.box{
+    width:789px;
+    margin:0 auto;
+    border:1px solid red;
+}
+.list-box{
+    margin:20px auto;
+    width:789px;
+    height:42px;
+    border-bottom:1px solid #ddd;
+}
+ul{
+    list-style:none;
+}
+.list{
+    float:right;
+    padding-top:10px
+    clear:right;
+}
+.list li{
+    float:left;
+    width:30px;
+    height:24px;
+    display: block;
+    background:url("images/listype-icon.png") -30px -26px;
+    cursor:pointer;
+    margin-right:3px;
+    /*border:solid 1px red;*/
+}
+#list-1{
+    background-position: 0 -26px;
+}
+.lesson-info img{
+    width:240px;
+}
+.changelist .list-1-o{
+    height:240px;
+    width:240px;
+    border:1px solid #aaaaaa;
+    float:left;
+    margin-right: 20px;
+    margin-bottom:20px;
+}
+.changelist .list-2-v{
+    height:170px;
+}
