@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        label { float: left; margin: 0 5px; overflow: hidden; position: relative; }
+        label input { position: absolute; left: -50px; top: -50px; }
+        span { float: left; width: 50px; height: 50px; border: 3px solid #000; }
+        input:checked~span { background: red; }
+    </style>
+</head>
+<body>
+	<label for="tab1">
+		<input type="radio" name="tab" id="tab1" />
+		<span></span>
+	</label>
+	<label for="tab2">
+		<input type="radio" name="tab" id="tab2" />
+		<span></span>
+	</label>
+	<label for="tab3">
+		<input type="radio" name="tab" id="tab3" />
+		<span></span>
+	</label>
+</body>
+</html>
